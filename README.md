@@ -77,6 +77,8 @@ Our code is tested with Python 3.8, PyTorch 1.9.1 and CUDA 11.3 and can be adapt
 
 5. Download the pretrained weights of our model from [Checkpoints](https://cloud.tsinghua.edu.cn/d/b8b3f6dad25b479fba7f/) and move them to `./ckpts/`.
 
+6. Refer to `README.md` in `./GroundedSAM_OccNeRF/` and prepare semantic prediction results of the training dataset if you want to train OccNeRF with semantic supervision.
+
 The Final folder structure should be like:
 
 ```
