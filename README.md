@@ -162,7 +162,7 @@ If this work is helpful for your research, please consider citing the following 
 @article{chubin2023occnerf, 
       title   = {OccNeRF: Self-Supervised Multi-Camera Occupancy Prediction with Neural Radiance Fields}, 
       author  = {Chubin Zhang and Juncheng Yan and Yi Wei and Jiaxin Li and Li Liu and Yansong Tang and Yueqi Duan and Jiwen Lu},
-      journal = {arXiv preprint arXiv:TODO},
+      journal = {arXiv preprint arXiv:2312.09243},
       year    = {2023}
 }
 ```
