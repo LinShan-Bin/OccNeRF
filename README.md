@@ -1,6 +1,6 @@
 # OccNeRF
 
-**[Project Page](https://linshan-bin.github.io/OccNeRF/) | [Paper](https://arxiv.org/abs/TODO) | [Checkpoints & Videos](https://cloud.tsinghua.edu.cn/d/91cd61031a6341ffbb0a/)**
+**[Project Page](https://linshan-bin.github.io/OccNeRF/) | [Paper](https://arxiv.org/pdf/2312.09243.pdf) | [Checkpoints & Videos](https://cloud.tsinghua.edu.cn/d/91cd61031a6341ffbb0a/)**
 
 > OccNeRF: Self-Supervised Multi-Camera Occupancy Prediction with Neural Radiance Fields
 >
