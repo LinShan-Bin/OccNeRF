@@ -1,6 +1,6 @@
 # OccNeRF
 
-**[Project Page](https://linshan-bin.github.io/OccNeRF/) | [Paper](https://arxiv.org/pdf/2312.09243.pdf) | [Checkpoints & Videos](https://cloud.tsinghua.edu.cn/d/91cd61031a6341ffbb0a/)**
+**[Project Page](https://linshan-bin.github.io/OccNeRF/) | [Paper](https://arxiv.org/pdf/2312.09243.pdf) | [Data](https://cloud.tsinghua.edu.cn/d/91cd61031a6341ffbb0a/)**
 
 > OccNeRF: Self-Supervised Multi-Camera Occupancy Prediction with Neural Radiance Fields
 >
@@ -8,6 +8,7 @@
 
 **Updates:**
 
+- `🔔 2023/12/157` Generated 2D semantic labels release.
 - `🔔 2023/12/15` Initial code and paper release.
 
 ## 🕹 Demos
@@ -60,7 +61,7 @@ Our code is tested with Python 3.8, PyTorch 1.9.1 and CUDA 11.3 and can be adapt
 
 1. Download nuScenes V1.0 full dataset data from [nuScenes](https://www.nuscenes.org/nuscenes#download) and link the data folder to `./data/nuscenes/nuscenes/`.
 
-2. Download the ground truth occupancy labels from [Occ3d](https://tsinghua-mars-lab.github.io/Occ3D/) and unzip the `gts.tar.gz` to `./data/nuscenes/gts`. Note that we only use the 3d occpancy labels for validation.
+2. Download the ground truth occupancy labels from [Occ3d](https://tsinghua-mars-lab.github.io/Occ3D/) and unzip the `gts.tar.gz` to `./data/nuscenes/gts`. Note that we only use the 3d occupancy labels for validation.
 
 3. Generate the ground truth depth maps for validation:
 
@@ -68,16 +69,11 @@ Our code is tested with Python 3.8, PyTorch 1.9.1 and CUDA 11.3 and can be adapt
       python tools/export_gt_depth_nusc.py
       ```
 
-4. Download the dataset index pickle file from [SurroundOcc](https://cloud.tsinghua.edu.cn/d/8dcb547238144d08a0bb/) and place `nuscenes_infos_train.pkl` under `./data/nuscenes/`. Then generate the ground truth semantic maps:
-
-      ```bash
-      cd GroundedSAM_OccNeRF
-      bash ./run.sh
-      ```
+4. Download the generated 2D semantic labels from [semantic_labels](https://cloud.tsinghua.edu.cn/d/d964ae46e28e473da255/) and extract the data to `./data/nuscenes/`. We recommend that you use `pigz` to speed up the process.
 
 5. Download the pretrained weights of our model from [Checkpoints](https://cloud.tsinghua.edu.cn/d/b8b3f6dad25b479fba7f/) and move them to `./ckpts/`.
 
-6. Refer to `README.md` in `./GroundedSAM_OccNeRF/` and prepare semantic prediction results of the training dataset if you want to train OccNeRF with semantic supervision.
+6. (Optional) If you want to generate the 2D semantic labels by yourself, please refer to the `README.md` in [GroundedSAM_OccNeRF](https://github.com/JunchengYan/GroundedSAM_OccNeRF). The  dataset index pickle file `nuscenes_infos_train.pkl` is from [SurroundOcc](https://cloud.tsinghua.edu.cn/d/8dcb547238144d08a0bb/) and should be placed under `./data/nuscenes/`.
 
 The Final folder structure should be like:
 
