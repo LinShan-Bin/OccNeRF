@@ -11,30 +11,6 @@ from utils import basic
 from utils import render
 
 
-def world2nsc(xyz, pc_range_roi=[-80, -80, 0, 80, 80, 6], max_hight_far=40):
-    # assert pc_range[2] == 0 and pc_range[0] == - pc_range[2] and pc_range[1] == - pc_range[3]
-    xy_max = torch.tensor(pc_range_roi[3: 5]).to(xyz).reshape([1]*len(xyz.shape[:-1]) + [2])
-    rho_max = torch.norm(xy_max)
-    
-    rhos = torch.norm(xyz[..., :2], dim=-1)
-    xyz[..., :2] = xyz[..., :2] / xy_max
-    max_hight = (max_hight_far * rhos / rho_max).clamp(min=pc_range_roi[-1])
-    xyz[..., 2] = xyz[..., 2] / max_hight * 2 - 1
-    return xyz
-
-
-def nsc2world(xyz, pc_range_roi=[-80, -80, 0, 80, 80, 6], max_hight_far=40):
-    # assert pc_range[2] == 0 and pc_range[0] == - pc_range[2] and pc_range[1] == - pc_range[3]
-    xy_max = torch.tensor(pc_range_roi[3: 5]).to(xyz).reshape([1]*len(xyz.shape[:-1]) + [2])
-    rho_max = torch.norm(xy_max)
-    
-    xyz[..., :2] = xyz[..., :2] * xy_max
-    rhos = torch.norm(xyz[..., :2], dim=-1)
-    max_hight = (max_hight_far * rhos / rho_max).clamp(min=pc_range_roi[-1])
-    xyz[..., 2] = (xyz[..., 2] + 1) / 2 * max_hight
-    return xyz
-
-
 def world2contracted(xyz_world, pc_range_roi=[-52, -52, 0, 52, 52, 6], ratio=0.8):
     """
     Convert 3D world coordinates to a contracted coordinate system based on a specified ROI.
