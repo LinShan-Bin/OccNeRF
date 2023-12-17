@@ -8,7 +8,7 @@
 
 **Updates:**
 
-- `🔔 2023/12/157` Generated 2D semantic labels release.
+- `🔔 2023/12/17` Generated 2D semantic labels release.
 - `🔔 2023/12/15` Initial code and paper release.
 
 ## 🕹 Demos
