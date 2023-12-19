@@ -502,7 +502,7 @@ class Runer:
         total_a2_26 = []
         total_a3_26 = []
 
-        # depth occuapncy
+        # depth occupancy
         total_abs_rel_52 = []
         total_sq_rel_52 = []
         total_rmse_52 = []
