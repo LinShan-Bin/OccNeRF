@@ -142,6 +142,14 @@ python -m torch.distributed.launch --nproc_per_node=8 run_vis.py --config config
 python gen_scene_video.py scene_folder_generated_by_the_above_command
 ```
 
+Visualize the semantic occupancy prediction:
+
+```bash
+python tools/export_vis_data.py  # You can modify this file to choose scenes you want to visualize. Otherwise, all validation scenes will be visualized.
+python -m torch.distributed.launch --nproc_per_node=8 run_vis.py --config configs/nusc-sem.txt --load_weights_folder ckpts/nusc-sem --log_dir your_log_dir
+python gen_scene_video.py scene_folder_generated_by_the_above_command --sem_only
+```
+
 ## 🙏 Acknowledgement
 
 Many thanks to these excellent projects:
