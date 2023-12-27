@@ -31,7 +31,7 @@ def create_video_from_images(input_folder, sem_only=False):
         occ_b = os.path.join(input_folder, '{:03d}-out.npy-back.jpg'.format(i))
         occ_bl = os.path.join(input_folder, '{:03d}-out.npy-back_left.jpg'.format(i))
         occ_br = os.path.join(input_folder, '{:03d}-out.npy-back_right.jpg'.format(i))
-        occ_down = cv2.hconcat([cv2.imread(occ_bl), cv2.imread(occ_b), cv2.imread(occ_br)])
+        occ_down = cv2.hconcat([cv2.imread(occ_br), cv2.imread(occ_b), cv2.imread(occ_bl)])
         
         frame = cv2.vconcat([image_up, occ_up, image_down, occ_down])
         out.write(frame)

@@ -647,16 +647,16 @@ class Runer:
                         image_left_front_right = np.concatenate(
                             (concated_image_list[1], concated_image_list[0], concated_image_list[5]), axis=1)
                         image_left_rear_right = np.concatenate(
-                            (concated_image_list[2], concated_image_list[3], concated_image_list[4]), axis=1)
+                            (concated_image_list[4], concated_image_list[3], concated_image_list[2]), axis=1)
 
                         image_surround_view = np.concatenate((image_left_front_right, image_left_rear_right), axis=0)
 
                         depth_left_front_right = np.concatenate(
                             (concated_depth_list[1], concated_depth_list[0], concated_depth_list[5]), axis=1)
-                        depth_left_rear_right = np.concatenate(
-                            (concated_depth_list[2], concated_depth_list[3], concated_depth_list[4]), axis=1)
+                        depth_right_rear_left = np.concatenate(
+                            (concated_depth_list[4], concated_depth_list[3], concated_depth_list[2]), axis=1)
 
-                        depth_surround_view = np.concatenate((depth_left_front_right, depth_left_rear_right), axis=0)
+                        depth_surround_view = np.concatenate((depth_left_front_right, depth_right_rear_left), axis=0)
                         surround_view = np.concatenate((image_surround_view, depth_surround_view), axis=0)
                     
                     elif self.opt.cam_N == 1:
