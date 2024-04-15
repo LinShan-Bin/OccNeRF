@@ -2,7 +2,7 @@
 
 **[Project Page](https://linshan-bin.github.io/OccNeRF/) | [Paper](https://arxiv.org/pdf/2312.09243.pdf) | [Data](https://cloud.tsinghua.edu.cn/d/91cd61031a6341ffbb0a/)**
 
-> OccNeRF: Self-Supervised Multi-Camera Occupancy Prediction with Neural Radiance Fields
+> OccNeRF: Advancing 3D Occupancy Prediction in LiDAR-Free Environments
 >
 > Chubin Zhang*, Juncheng Yan* [Yi Wei*](https://weiyithu.github.io/), [Jiaxin Li](https://www.jiaxinli.me/), Li Liu, [Yansong Tang](https://andytang15.github.io/), [Yueqi Duan](https://duanyueqi.github.io/), [Jiwen Lu](http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/)
 
