@@ -166,7 +166,7 @@ If this work is helpful for your research, please consider citing the following 
 
 ```bibtex
 @article{chubin2023occnerf, 
-      title   = {OccNeRF: Self-Supervised Multi-Camera Occupancy Prediction with Neural Radiance Fields}, 
+      title   = {OccNeRF: Advancing 3D Occupancy Prediction in LiDAR-Free Environments}, 
       author  = {Chubin Zhang and Juncheng Yan and Yi Wei and Jiaxin Li and Li Liu and Yansong Tang and Yueqi Duan and Jiwen Lu},
       journal = {arXiv preprint arXiv:2312.09243},
       year    = {2023}
