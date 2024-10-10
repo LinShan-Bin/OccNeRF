@@ -1,6 +1,6 @@
 # OccNeRF
 
-**[Project Page](https://linshan-bin.github.io/OccNeRF/) | [Paper](https://arxiv.org/pdf/2312.09243.pdf) | [Data](https://cloud.tsinghua.edu.cn/d/91cd61031a6341ffbb0a/)**
+**[Project Page](https://linshan-bin.github.io/OccNeRF/) | [Paper](https://arxiv.org/pdf/2312.09243.pdf) | [Data](https://cloud.tsinghua.edu.cn/d/564c9ac19b5f4b54a774/)**
 
 > OccNeRF: Advancing 3D Occupancy Prediction in LiDAR-Free Environments
 >
@@ -15,13 +15,13 @@
 
 Demos are a little bit large; please wait a moment to load them. If you cannot load them or feel them blurry, you can click the hyperlink of each demo for the full-resolution raw video.
 
-### [Depth estimation:](https://cloud.tsinghua.edu.cn/f/133528b00115483f9601/)
+### [Depth estimation:](https://cloud.tsinghua.edu.cn/d/564c9ac19b5f4b54a774/files/?p=%2Fdemos%2Foccnerf-demo.mp4)
 
 <p align='center'>
 <img src="./assets/occnerf-demo.gif" width="480px">
 </p>
 
-### [Occupancy prediction:](https://cloud.tsinghua.edu.cn/f/0e4fe54266a54379b6d5/)
+### [Occupancy prediction:](https://cloud.tsinghua.edu.cn/d/564c9ac19b5f4b54a774/files/?p=%2Fdemos%2Foccnerf-demo-sem.mp4)
 
 <p align='center'>
 <img src="./assets/occnerf-demo-sem.gif" width="480px">
@@ -69,9 +69,9 @@ Our code is tested with Python 3.8, PyTorch 1.9.1 and CUDA 11.3 and can be adapt
       python tools/export_gt_depth_nusc.py
       ```
 
-4. Download the generated 2D semantic labels from [semantic_labels](https://cloud.tsinghua.edu.cn/d/d964ae46e28e473da255/) and extract the data to `./data/nuscenes/`. We recommend that you use `pigz` to speed up the process.
+4. Download the generated 2D semantic labels from [semantic_labels](https://cloud.tsinghua.edu.cn/d/564c9ac19b5f4b54a774/?p=%2Fsemantic_labels&mode=list) and extract the data to `./data/nuscenes/`. We recommend that you use `pigz` to speed up the process.
 
-5. Download the pretrained weights of our model from [Checkpoints](https://cloud.tsinghua.edu.cn/d/b8b3f6dad25b479fba7f/) and move them to `./ckpts/`.
+5. Download the pretrained weights of our model from [Checkpoints](https://cloud.tsinghua.edu.cn/d/564c9ac19b5f4b54a774/?p=%2Fckpts&mode=list) and move them to `./ckpts/`.
 
 6. (Optional) If you want to generate the 2D semantic labels by yourself, please refer to the `README.md` in [GroundedSAM_OccNeRF](https://github.com/JunchengYan/GroundedSAM_OccNeRF). The  dataset index pickle file `nuscenes_infos_train.pkl` is from [SurroundOcc](https://cloud.tsinghua.edu.cn/d/8dcb547238144d08a0bb/) and should be placed under `./data/nuscenes/`.
 
