@@ -165,10 +165,11 @@ Many thanks to these excellent projects:
 If this work is helpful for your research, please consider citing the following BibTeX entry.
 
 ```bibtex
-@article{chubin2023occnerf, 
-      title   = {OccNeRF: Advancing 3D Occupancy Prediction in LiDAR-Free Environments}, 
-      author  = {Chubin Zhang and Juncheng Yan and Yi Wei and Jiaxin Li and Li Liu and Yansong Tang and Yueqi Duan and Jiwen Lu},
-      journal = {arXiv preprint arXiv:2312.09243},
-      year    = {2023}
+@article{zhang2025occnerf,
+  title={Occnerf: Advancing 3d occupancy prediction in lidar-free environments},
+  author={Zhang, Chubin and Yan, Juncheng and Wei, Yi and Li, Jiaxin and Liu, Li and Tang, Yansong and Duan, Yueqi and Lu, Jiwen},
+  journal={IEEE Transactions on Image Processing},
+  year={2025},
+  publisher={IEEE}
 }
 ```
